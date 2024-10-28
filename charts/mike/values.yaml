@@ -1,0 +1,27 @@
+################################################################################
+## Deployment Configuration
+################################################################################
+
+files:
+  image:
+    registry: njpowell
+    name: files
+
+blog:
+  image:
+    registry: njpowell
+    name: blog
+
+prometheus:
+  alertmanager:
+    enabled: false
+  kube-state-metrics:
+    enabled: false
+  prometheus-node-exporter:
+    enabled: false
+  prometheus-pushgateway:
+    enabled: false
+
+grafana:
+  persistence:
+    enabled: true
