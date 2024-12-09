@@ -18,8 +18,8 @@ spec:
         - name: echo
           image: jmalloc/echo-server:latest
       initContainers:
-        - name: mike
-          image: njpowell/mike:latest
+        - name: car
+          image: njpowell/car:latest
           restartPolicy: Always
           args: ['localhost:8080']
           env:

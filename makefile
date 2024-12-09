@@ -1,6 +1,6 @@
 .PHONY: build
 build:
-	go build -o output/bin/mike cmd/mike/main/main.go
+	go build -o output/bin/car cmd/car/main/main.go
 
 .PHONY: gen
 gen:
@@ -11,15 +11,15 @@ gen:
 
 .PHONY: image
 image:
-	docker build --push -t njpowell/mike .
+	docker build --push -t njpowell/car .
 
 .PHONY: helm
 helm:
-	helm install mike ./charts/mike
+	helm install car ./charts/car
 
 .PHONY: uhelm
 uhelm:
-	helm uninstall mike
+	helm uninstall car
 
 .PHONY: ksecret
 ksecret:

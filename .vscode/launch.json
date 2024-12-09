@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}/cmd/mike/main/main.go",
+            "program": "${workspaceFolder}/cmd/car/main/main.go",
             "args": [
                 "localhost:8080"
             ],

@@ -7,4 +7,4 @@ RUN make build
 
 FROM alpine
 COPY --from=build /app/output/bin /bin
-ENTRYPOINT [ "mike" ]
+ENTRYPOINT [ "car" ]

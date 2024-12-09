@@ -1,4 +1,4 @@
-module github.com/njayp/mike
+module github.com/njayp/ngrok-car
 
 go 1.23
 
